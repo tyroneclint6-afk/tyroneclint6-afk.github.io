@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Vassell Empire Software Consulting Consultancy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a252c;
+            --secondary: #2980b9;
+            --light-bg: #f4f6f8;
+            --text-main: #333;
+            --text-light: #7f8c8d;
+            --card-bg: #ffffff;
+            --accent: #e74c3c;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--light-bg); }
+        
+        header { background: var(--primary); color: #ffffff; padding: 3rem 1rem; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; color: #bdc3c7; }
+
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        
+        .section-intro { background: var(--card-bg); padding: 2.5rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .section-intro h2 { color: var(--primary); margin-bottom: 1rem; }
+        .section-intro p { color: var(--text-light); max-width: 800px; margin: 0 auto; }
+
+        .inventory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        
+        .product-card { background: var(--card-bg); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; border-top: 4px solid var(--secondary); display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card h3 { color: var(--secondary); margin-bottom: 0.5rem; }
+        .product-card p { color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1; }
+        
+        .btn { display: inline-block; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; cursor: pointer; border: none; transition: background 0.3s ease; }
+        .btn-primary { background: var(--secondary); color: #fff; }
+        .btn-primary:hover { background: #3498db; }
+        .btn-accent { background: var(--accent); color: #fff; }
+        .btn-accent:hover { background: #c0392b; }
+
+        .contact-section { background: var(--primary); color: #fff; padding: 3rem 2rem; border-radius: 8px; }
+        .contact-section h2 { text-align: center; margin-bottom: 2rem; }
+        .contact-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+        .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 0.75rem; border-radius: 4px; border: 1px solid #7f8c8d; background: var(--light-bg); color: var(--text-main); font-size: 1rem; }
+        .contact-form textarea { height: 150px; resize: vertical; }
+
+        footer { text-align: center; padding: 3rem; color: var(--text-light); }
+        
+        @media (max-width: 768px) {
+            header { padding: 2rem 1rem; }
+            .container { margin: 1rem auto; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marvin Vassell Empire Software Consulting Consultancy</h1>
+    <p>Innovative Software Solutions & Consulting</p>
+</header>
+
+<div class="container">
+
+    <section class="section-intro">
+        <h2>Our Digital Inventory</h2>
+        <p>Explore our suite of proprietary software applications, AI frameworks, and custom consultancy services designed to drive efficiency and technological advancement.</p>
+    </section>
+
+    <div class="inventory-grid">
+        
+        <div class="product-card">
+            <h3><i class="fa-solid fa-brain"></i><a href="projects/alex2face.html"> ALEX2FACE</a></h3>
+            <p>An advanced AI companion and real-time translation framework incorporating voice processing and multi-language capabilities.</p>
+            <a href="projects/alex2face.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-robot"></i> Samson AI Enterprise</h3>
+            <p>High-level artificial intelligence systems providing custom consultancy and intelligent architecture for modern enterprises.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-water"></i> Zero-Rain Dam System</h3>
+            <p>A drought-proof water model leveraging limestone aquifers, spring capture, and desalination for continuous water supply.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-mobile-screen"></i> Balance — AI Habits</h3>
+            <p>A mobile application for teen usage control, featuring activity resets, screen time tracking, and parental oversight.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-shield-halved"></i><a href="projects/guardian-armor.html"> Guardian Armor</a></h3>
+            <p>A robust mobile security application offering real-time threat detection and active protection monitoring.</p>
+            <a href="projects/guardian-armor.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-gamepad"></i> Poker Empire</h3>
+            <p>A highly engaging mobile card game built with optimized Android App Bundle structures and seamless release pipelines.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-cubes"></i> 3D Storefronts</h3>
+            <p>Interactive 3D web storefronts and product visualizers built using advanced HTML, CSS, and interactive JavaScript.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <h3><i class="fa-solid fa-handshake"></i> Software Consulting</h3>
+            <p>Expert software engineering and technology consulting tailored to scale your digital infrastructure and business operations.</p>
+            <a href="#contact" class="btn btn-accent">Inquire Now</a>
+        </div>
+
+    </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Request a Consultation</h2>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="service" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="AI Framework Development">AI Framework Development</option>
+                <option value="Smart Infrastructure">Smart Infrastructure / Water Systems</option>
+                <option value="Mobile Application Development">Mobile Application Development</option>
+                <option value="3D Web Development">3D Web Storefronts</option>
+                <option value="General Software Consulting">General Software Consulting</option>
+            </select>
+            <textarea name="message" placeholder="Details about your project requirements..." required></textarea>
+            <button type="submit" class="btn btn-accent">Submit Inquiry</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Marvin Vassell Empire Software Consulting Consultancy. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```I'm here. What's on your mind?
